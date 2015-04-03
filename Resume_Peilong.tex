@@ -1,0 +1,383 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Cies Resume/CV
+% LaTeX Template
+% Version 1.0 (10/2/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Cies Breijs (cies@kde.nl)
+% https://github.com/cies/resume with extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,a4paper]{article} % Font size (10-12pt) and paper size (a4paper, letterpaper, legalpaper, etc)
+
+\include{structure} % Include structure.tex which contains packages and document layout definitions
+
+\hyphenation{Some-long-word} % Specify custom hyphenation points in words with dashes where you would like hyphenation to occur, or alternatively, don't put any dashes in a word to stop hyphenation altogether
+
+\begin{document} 
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\maintitle{Peilong Li}{}  % Your name and date of birth or subtitle
+
+\noindent\href{mailto:Peilong\_Li@student.uml.edu}{Peilong\_Li@student.uml.edu}\bull % Your email address
+\textsmaller{+}1 (978) 905-9351\bull li.bernard \textit{(Skype)}\bull % Your phone number(s) and Skype username
+\href{http://www.linkedin.com/pub/peilong-li/55/a5/725}{LinkedIn: http://lnkd.in/HeHjrY}\\ % Your URL
+\href{https://github.com/Peilong}{Github.com/Peilong} \bull
+One University Ave\bull Lowell, 01854\bull MA\bull USA % Your address
+
+\spacedhrule{0.5em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
+
+%----------------------------------------------------------------------------------------
+%	SUMMARY SECTION
+%----------------------------------------------------------------------------------------
+
+\roottitle{Summary} % Root section title
+
+%\vspace{-1.3em} % Reduce whitespace after the Summary heading and the two-column content
+
+%\begin{multicols}{2}  % Start a two-column layout
+%\noindent \textit{Creative researcher with published works, a cooperative mind in team project, and a passion for delivering value by developing maintainable software.}
+\begin{itemize}
+  \item Proficient system administration and programming skills in Bash, Python, C and Java.
+  \item Strong knowledge background in microprocessor architecture, cloud computing and big data analysis based on Apache Spark.
+  \item Apache Spark contributor for web visualization tool.
+  \item Experience in Android application development as a commercial product with Java and C++.
+  \item Experience in web development with HTML, CSS, JavaScript, jQuery and PHP.
+  \item Excellent problem solving and debugging skills for resolving software and hardware system issues with 7 hardware and system designers.
+\end{itemize}
+%\end{multicols}
+
+
+\spacedhrule{0.5em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\roottitle{Education} % Top level section
+
+\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+{\href{http://www.uml.edu}{University of Massachusetts Lowell}}
+{\textsc{Lowell, MA, USA}} {
+
+\headedsubsection % Job title entry for the current employer
+{Ph.D candidate in Electrical \& Computer Engineering (GPA: 3.83/4.0)}
+{2011 -- Present}
+{\bodytext{Focused on heterogeneous computer architecture and cloud/mobile computing.}}
+}
+
+%------------------------------------------------
+
+\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+{\href{http://www.qust.edu.cn}{Qingdao University of Science and Technology}}
+{\textsc{Qingdao, Shandong, China}} {
+
+\headedsubsection % Job title entry for the current employer
+{Bachelor degree in Electrical Engineering (GPA: 95.3/100)}
+{2007 -- 2011} {}
+}
+
+%%------------------------------------------------
+%
+%\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+%{Libanon Lyceum}
+%{\textsc{Rotterdam, The Netherlands}} {
+%
+%\headedsubsection % Job title entry for the current employer
+%{\acr{VWO} \textnormal{(pre-university secondary education)}}
+%{1994 -- 2000} {}
+%}
+
+
+\spacedhrule{0.5em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\roottitle{Work Experiences} % Top level section
+
+\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+{\href{http://yanluo.github.io/research/projects/}{UMass Lowell ACANETS Lab Research Assistant}}
+{\textsc{Lowell, \acr{MA}, \acr{USA}}} {
+
+\headedsubsection % Job title entry for the current employer
+{\acr{SDNatics: A Real Time Analytics and Prediction Service for SDN}}
+{Jan '15 -- Present}
+{\bodytext{
+Work as the team lead to design a real time analytics and prediction service for Software Defined Network. Four major components of this project are: 
+\begin{enumerate}
+  \item \textbf{SDN component}: Extract network flows from SDN; 
+  \item \textbf{Streaming component}: Contains REST service, messaging system (Kafka) and streaming service (SparkStream);
+  \item \textbf{Analytics}: Spark based machine learning algorithms to model network pattern;
+  \item \textbf{UI}: Web based user interface to show analytics results and network map-in-motion.
+\end{enumerate}
+
+\begin{itemize}
+  \item Language: Java, Scala
+\end{itemize}
+}
+}
+
+\headedsubsection % Job title entry for the current employer
+{\acr{HeteroSpark: CPU/GPU Heterogeneous Spark Platform for Machine Learning}}
+{June '14 -- Present}
+{\bodytext{
+Design the HeteroSpark platform to further accelerate machine learning algorithms on Apache Spark. Major components of HeteroSpark include:
+\begin{enumerate}
+  \item \textbf{Communication layer}: Design a communication layer between CPU and GPU on Spark worker node by using Java RMI; 
+  \item \textbf{GPU library}: Compile existing CUDA libs with JNI and make them callable from Spark worker node;
+  \item \textbf{Plug-n-play}: Design the glue logic to enable transparent innovation of GPU accelerator.
+\end{enumerate}
+
+\begin{itemize}
+  \item Language: Java, C
+\end{itemize}
+}
+}
+
+\headedsubsection % Job title entry for the current employer
+{\acr{Apache Spark Visualization \& Analysis Tool}}
+{Jan '14 -- Present}
+{\bodytext{
+Design and develop the logging, visualizing, and analyzing tool for finding the bottleneck of Spark Applications including:
+\begin{enumerate}
+  \item \textbf{Benchmarking}: Investigate the scalability and performance issues of benchmark running on Apache Spark EC2 cluster. 
+  \item \textbf{New metrics}: Write a more detailed metrics and log system on the top of native Spark code by using Scala.
+  \item \textbf{Web app}: Develop a web-based visualization tool -- Sparkling (\href{http://pr01.uml.edu/index.php}{pr01.uml.edu}) for better analyzing the metrics/log data generated on the Spark end.
+\end{enumerate}
+
+\begin{itemize}
+  \item Language: Scala, Python, HTML, JavaScript, jQuery and PHP
+  \item Environment \& Platform: Amazon EC2, Apache server
+\end{itemize}
+}
+}
+
+
+\headedsubsection % Job title entry for the current employer
+{\acr{Contactless Fingerprint Binarization on Smart Phones}}
+{Sept '13 -- Dec '13}
+{\bodytext{
+Designed and developed an Android software application for contactless fingerprint binarization system including add-on hardware and software on modern smart phones with a team of 7 hardware and system designers.
+\begin{itemize}
+  \item Language: Java, C++ and MATLAB
+  \item Environment \& Platform: Android 2.3 +
+\end{itemize}
+}
+}
+
+\headedsubsection % Job title entry for the current employer
+{\acr{Accelerator-based Chip Multi-processor (CMP)}}
+{Sept '12 -- Sept '14}
+{\bodytext{
+Enlightened by the idea of power-efficient on-chip accelerator (GPU, FPGA, etc.), modified a Simulator \href{http://multi2sim.org}{Multi2Sim} in C with the ability of performing user app acceleration. A publication on the promising results is currently under review by \href{http://www.journals.elsevier.com/journal-of-parallel-and-distributed-computing/}{Journal of Parallel and Distributed Computing}.
+\begin{itemize}
+  \item Language: C, VHDL and Verilog
+  \item Tools \& Platform: Multi2Sim, VMware, Altera Quartus II and Xilinx ISE
+\end{itemize}
+}
+}
+
+}
+
+%------------------------------------------------
+
+%\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+%{\href{https://umasslowellclubs.collegiatelink.net/organization/umlcssa}{UMass Lowell Chinese Student and Scholars Association (UML CSSA)}}
+%{\textsc{Lowell, \acr{MA}, \acr{USA}}} {
+%
+%\headedsubsection % Job title entry for the current employer
+%{\acr{President and IT President}}
+%{Sept '12 -- Sept '13}
+%{\bodytext{Designed a logo for UML CSSA, a non-profit association in UMass Lowell, during the term of presidency. Led a team to develop a website (\href{http://www.umlcssa.org}{www.umlcssa.org}) and a forum (\href{http://bbs.umlcssa.org}{bbs.umlcssa.org}) for member's discussion and blogging. \\
+%\noindent $\bullet$ Language: HTML, CSS, JaveScript and PHP\\
+%\noindent $\bullet$ Database: MySQL}}
+%}
+
+%------------------------------------------------
+
+\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+{\href{http://www.uml.edu/engineering/electrical-computer/}{UMass Lowell Electrical and Computer Engineering}}
+{\textsc{Lowell, \acr{MA}, \acr{USA}}} {
+
+\headedsubsection % Job title entry for the current employer
+{Teaching Assistant}
+{Sept '11 -- present}
+{\bodytext{Work as a TA for both Microprocessor I and II. Help students with their problems on code writing and debugging, such as linux device driver, peripheral device communication and device-web communication through a PC, etc..\\
+\noindent $\bullet$ Language: Assembly, C\\
+\noindent $\bullet$ Tools \& Platform: Linux, Windows and Windows Visual Studio C++}}
+
+\headedsubsection % Job title entry for the current employer
+{Guest Lecturer}
+{Feb 23, '15 \& Mar 23, '15}
+{\bodytext{Invited as a guest lecturer to teach Apache Spark for course 16.711 Special Topics on Heterogeneous Computing. Lecture contents include Spark core, Spark MLlib and hands-on experience with Spark programming. \\
+\noindent $\bullet$ Language: Scala, Java\\
+\noindent $\bullet$ Tools \& Platform: Apache Spark}}
+
+}
+
+\spacedhrule{0.5em}{-0.4em}
+%----------------------------------------------------------------------------------------
+%	Publications SECTION
+%----------------------------------------------------------------------------------------
+
+\roottitle{Publications \& Invited Talks} % Top level section
+
+
+
+%------------------------------------------------
+\headedsection % Special section that has an inline header with a 'hanging' paragraph
+{HeteroSpark: A Heterogeneous CPU/GPU Spark Platform for Deep Learning Algorithms}
+{2015}
+{\bodytext{
+Author: \emph{\textbf{Peilong Li}, Yan Luo, Yu Cao, and Ning Zhang}\\
+\emph{Spark Summit East 2015, March 18 - 19, 2015, New York, NY.}}}
+
+\headedsection % Special section that has an inline header with a 'hanging' paragraph
+{Sparkling: Identification of Task Skew and Speculative Partition of Data for Spark Applications}
+{2014}
+{\bodytext{
+Author: \emph{\textbf{Peilong Li}, Yan Luo, Zhao Tian, Xiaobing Huang, and Yu Cao}\\
+\emph{Spark Summit 2014, June 30 - July 1, 2014, San Fransisco, CA.}}}
+
+\headedsection % Special section that has an inline header with a 'hanging' paragraph
+{Transformer: Run-time Reprogrammable Heterogeneous Architecture for Transparent Acceleration of Dynamic Workloads}
+{2014}
+{\bodytext{
+Author: \emph{\textbf{Peilong Li}, Yan Luo, and Jun Yang}\\
+\emph{Currently under review in Journal of Parallel and Distributed Computing.}}}
+
+\headedsection % Special section that has an inline header with a 'hanging' paragraph
+{Exploration of Memory Hierarchy of Heterogeneous Architecture with Accelerators}
+{2012}
+{\bodytext{
+Author: \emph{\textbf{Peilong Li}, Yan Luo, Thomas Calloway, and Mohammad Imran Vikal}\\
+\emph{The 3rd Workshop on SoCs, Heterogeneous Architectures and Workloads, Feb 26, 2012, New Orleans, LA.}}}
+
+\headedsection % Special section that has an inline header with a 'hanging' paragraph
+{Study of Image Segmentation Algorithm Based on Textural Features and Neural Network}
+{2010}
+{\bodytext{
+Author: \emph{Wencang Zhao, Junbo Zhang, \textbf{Peilong Li}, and Yang Li}\\
+\emph{Proceedings of 2010 International Conference on Intelligent Computing and Cognitive Informatics.}}}
+
+%------------------------------------------------
+\spacedhrule{0.5em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
+
+%----------------------------------------------------------------------------------------
+%	Volunteer Job SECTION
+%----------------------------------------------------------------------------------------
+
+\roottitle{Volunteer Experiences} % Top level section
+
+\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+{\href{http://www.uml.edu/ISSO/default.aspx}{UMass Lowell International Students \& Scholars Office}}
+{\textsc{Lowell, \acr{MA}, \acr{USA}}}  {
+
+\headedsubsection % Job title entry for the current employer
+{International Student Ambassador}
+{Sept '11 -- Sept '13}
+{\bodytext{Assisted on ISSO daily affairs and host big events for international students.}}
+}
+
+\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+{\href{http://cbcgl.sharepoint.com/Pages/StudentFellowshipIntroduction.aspx}{UMass Lowell Chinese Student Fellowship}}
+{\textsc{Lowell, \acr{MA}, \acr{USA}}}  {
+
+\headedsubsection % Job title entry for the current employer
+{Volunteer}
+{Sept '11 -- Present}
+{\bodytext{Participate at UMass Lowell Chinese Student Fellowship for Friday night Bible Study and student events.}}
+}
+
+
+\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+{\href{http://nltmc.toastmastersclubs.org/}{New Life Toastmasters Club}}
+{\textsc{Chelmsford, \acr{MA}, \acr{USA}}}  {
+\headedsubsection % Job title entry for the current employer
+{VP Education (a.k.a. Project Manager)}
+{July '14 -- Present}
+{\bodytext{Work as Toastmasters Club VP Education (a.k.a. Project Manager) for collaborating and educating up to 25 club members for fulfilling 11 meeting roles for weekly meeting and achieving Competent Communicator and Competent Leader awards.}}
+}
+
+\spacedhrule{0.5em}{-0.4em}
+%----------------------------------------------------------------------------------------
+%	Honors and Rewards SECTION
+%----------------------------------------------------------------------------------------
+
+\roottitle{Honors} % Top level section
+
+\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+{\href{http://nltmc.toastmastersclubs.org/}{New Life Toastmasters Club}}
+{\textsc{Chelmsford, \acr{MA}, \acr{USA}}}  {
+
+\headedsubsection % Job title entry for the current employer
+{New Life Toastmasters Club Charter Member}
+{Jan '14 -- Present}
+{\bodytext{Being charter member and actively participating in multiple club events (~75 attendees) for promoting English communication and leadership training. }}
+}
+
+\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+{\href{http://www.toastmasters.org/}{Toastmasters International}}
+{\textsc{Rancho Santa Margarita, \acr{CA}, \acr{USA}}}  {
+\headedsubsection % Job title entry for the current employer
+{Second Place of Toastmaster Club Humorous Speech Contest}
+{Oct '14}
+{\bodytext{Win the 2nd Place in Toastmaster Club Humorous Speech Contest and compete in the area contest in represent of the club. }}
+}
+
+
+%------------------------------------------------
+
+
+\spacedhrule{0.5em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\roottitle{Skills} % Top level section
+
+\inlineheadsection % Special section that has an inline header with a 'hanging' paragraph
+{Technical specialties:}
+{Software design and implementation, with(in) a team. Proficient in Python/C/C++/Java and hands-on experience in Scala recently. Experience in web and server technologies:\ \acr{HTML+CSS}, \acr{JavaScript (mainly jQuery)}, \acr{PHP} and Apache server. Linux administration skills:\ bash, Python, virtualization/cloud (\acr{VM}ware and \acr{EC}2). Distributed framework:\ Apache Spark.}
+
+%------------------------------------------------
+
+\inlineheadsection % Special section that has an inline header with a 'hanging' paragraph
+{Languages:}
+{Fluent in both English and Chinese.}
+
+%------------------------------------------------
+
+%\spacedhrule{1.6em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+%\roottitle{Interests} % Top level section
+%
+%\inlineheadsection % Special section that has an inline header with a 'hanging' paragraph
+%{Non-exhaustive and in alphabetical order:}
+%{Art, Chinese cooking, Chinese handwriting, Christian,  music, swimming, travel.}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
